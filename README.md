@@ -214,14 +214,3 @@ function App() {
 ## 🤝 Contributing
 
 We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
-
-## 📄 License
-
-MIT © [Media Query Debugger Team](https://media-query-debugger.dev)
-
-## 🔗 Links
-
-- [Documentation](https://media-query-debugger.dev/docs)
-- [Examples](https://media-query-debugger.dev/examples)
-- [GitHub](https://github.com/media-query-debugger)
-- [NPM](https://www.npmjs.com/package/media-query-debugger)

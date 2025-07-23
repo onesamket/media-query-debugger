@@ -1,6 +1,6 @@
 {
   "name": "media-query-debugger",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Advanced responsive debugger and responsive design testing tool with device mockups, media query monitoring, and debugging features for React applications",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
