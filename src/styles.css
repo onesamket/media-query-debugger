@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom scrollbar */
+.breakpoint-debugger-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.breakpoint-debugger-scrollbar::-webkit-scrollbar-track {
+  @apply bg-slate-800/20;
+  border-radius: 3px;
+}
+
+.breakpoint-debugger-scrollbar::-webkit-scrollbar-thumb {
+  @apply bg-slate-600/50;
+  border-radius: 3px;
+}
+
+.breakpoint-debugger-scrollbar::-webkit-scrollbar-thumb:hover {
+  @apply bg-slate-600/70;
+}
+
+/* Device frame animations */
+.breakpoint-debugger-device-frame {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.breakpoint-debugger-device-frame:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 10px 10px -5px rgb(0 0 0 / 0.04);
+}
+
+/* Grid pattern */
+.breakpoint-debugger-grid-pattern {
+  background-image: linear-gradient(rgba(148, 163, 184, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(148, 163, 184, 0.1) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Ruler styles */
+.breakpoint-debugger-ruler-horizontal {
+  background: linear-gradient(90deg, transparent 0px, rgba(148, 163, 184, 0.3) 1px, transparent 1px);
+  background-size: 50px 100%;
+}
+
+.breakpoint-debugger-ruler-vertical {
+  background: linear-gradient(transparent 0px, rgba(148, 163, 184, 0.3) 1px, transparent 1px);
+  background-size: 100% 50px;
+}

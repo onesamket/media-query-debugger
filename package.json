@@ -1,0 +1,92 @@
+{
+  "name": "media-query-debugger",
+  "version": "1.0.1",
+  "description": "Advanced responsive debugger and responsive design testing tool with device mockups, media query monitoring, and debugging features for React applications",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./styles": "./dist/styles.css"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "type-check": "tsc --noEmit",
+    "lint": "eslint src --ext .ts,.tsx",
+    "lint:fix": "eslint src --ext .ts,.tsx --fix",
+    "test": "jest",
+    "prepublishOnly": "npm run build",
+    "release": "npm run build && npm publish"
+  },
+  "keywords": [
+    "react",
+    "breakpoint",
+    "debugger",
+    "responsive-debugger",
+    "responsive-design-debugger",
+    "responsive",
+    "design",
+    "media-queries",
+    "device-mockup",
+    "testing",
+    "development-tools",
+    "ui-tools"
+  ],
+  "author": {
+    "name": "Tewodros Birhanu",
+    "email": "onesamke@gmail.com",
+    "url": "https://onesamke.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/onesamke/media-query-debugger.git"
+  },
+  "bugs": {
+    "url": "https://github.com/onesamke/media-query-debugger/issues"
+  },
+  "homepage": "https://onesamke.com",
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "dependencies": {
+    "@radix-ui/react-dialog": "^1.0.5",
+    "@radix-ui/react-separator": "^1.0.3",
+    "@radix-ui/react-slider": "^1.1.2",
+    "@radix-ui/react-switch": "^1.0.3",
+    "@radix-ui/react-tabs": "^1.0.4",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.0.0",
+    "lucide-react": "^0.294.0",
+    "tailwind-merge": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.0.0",
+    "eslint-plugin-react": "^7.33.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "jest": "^29.0.0",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
